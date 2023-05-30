@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    form {
+      width: 300px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+
+    input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background-color: #4caf50;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+
+    .login-option {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+  </style>
+  <script>
+    function validateForm() {
+      var username = document.getElementById("username").value;
+      var password = document.getElementById("password").value;
+
+      if (username === "" || password === "") {
+        alert("Mohon lengkapi semua field.");
+        return false;
+      }
+    }
+  </script>
+</head>
+<body>
+  <h2>Selamat datang di Sistem Informasi Belajar Mengajar</h2>
+  <form onsubmit="return validateForm()">
+    <div>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+    </div>
+    <div>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+    </div>
+    <div class="login-option">
+      <input type="radio" id="student" name="loginType" value="student" checked>
+      <label for="student">Siswa</label>
+      <input type="radio" id="teacher" name="loginType" value="teacher">
+      <label for="teacher">Guru</label>
+    </div>
+    <div>
+      <input type="submit" value="Login">
+    </div>
+  </form>
+</body>
+</html>

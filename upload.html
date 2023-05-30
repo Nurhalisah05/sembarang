@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Upload Tugas</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    .sidebar {
+      width: 200px;
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      box-sizing: border-box;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+
+    .sidebar ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .sidebar li {
+      margin-bottom: 10px;
+    }
+
+    .sidebar a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .content {
+      margin-left: 200px;
+      padding: 20px;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    .upload-form {
+      max-width: 400px;
+      margin: 0 auto;
+      background-color: #fff;
+      border-radius: 5px;
+      padding: 20px;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .upload-form label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .upload-form input[type="file"] {
+      margin-bottom: 10px;
+    }
+
+    .upload-form button {
+      background-color: #4caf50;
+      color: #fff;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    .upload-form button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <ul>
+      <li><a href="#">Beranda</a></li>
+      <li><a href="#">Profil</a></li>
+      <li><a href="#">Tugas</a></li>
+      <li><a href="#">Materi</a></li>
+      <li><a href="#">Pengaturan</a></li>
+    </ul>
+  </div>
+  
+  <div class="content">
+    <h2>Halaman Upload Tugas</h2>
+    <form class="upload-form">
+      <label for="assignment">Tugas</label>
+      <input type="file" id="assignment" name="assignment" required>
+      
+      <label for="description">Deskripsi</label>
+      <textarea id="description" name="description" rows="4" placeholder="Masukkan deskripsi tugas" required></textarea>
+      
+      <button type="submit">Upload</button>
+    </form>
+  </div>
+</body>
+</html>

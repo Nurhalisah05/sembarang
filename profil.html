@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Profil</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    .sidebar {
+      width: 200px;
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      box-sizing: border-box;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+
+    .sidebar ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .sidebar li {
+      margin-bottom: 10px;
+    }
+
+    .sidebar a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .content {
+      margin-left: 200px;
+      padding: 20px;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    .profile {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .profile img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    .profile h3 {
+      margin: 0;
+    }
+
+    .profile p {
+      margin-bottom: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <ul>
+      <li><a href="beranda.html">Beranda</a></li>
+      <li><a href="profil.html">Profil</a></li>
+      <li><a href="tugas.html">Tugas</a></li>
+      <li><a href="materi.html">Materi</a></li>
+      <li><a href="pengaturan.html">Pengaturan</a></li>
+    </ul>
+  </div>
+  
+  <div class="content">
+    <h2>Halaman Profil</h2>
+    <div class="profile">
+      <img src="path/to/profile-picture.jpg" alt="Profile Picture">
+      <h3>Nama Pengguna</h3>
+      <p>Email: user@example.com</p>
+      <p>Role: Siswa</p>
+      <p>Kelas: 1A</p>
+    </div>
+  </div>
+</body>
+</html>

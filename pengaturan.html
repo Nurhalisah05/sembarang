@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pengaturan</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    .sidebar {
+      width: 200px;
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      box-sizing: border-box;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+
+    .sidebar ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .sidebar li {
+      margin-bottom: 10px;
+    }
+
+    .sidebar a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .content {
+      margin-left: 200px;
+      padding: 20px;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    .settings-form {
+      max-width: 400px;
+      margin: 0 auto;
+      background-color: #fff;
+      border-radius: 5px;
+      padding: 20px;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .settings-form label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .settings-form input[type="text"],
+    .settings-form select {
+      width: 100%;
+      padding: 8px;
+      border-radius: 3px;
+      border: 1px solid #ccc;
+    }
+
+    .settings-form button {
+      background-color: #4caf50;
+      color: #fff;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    .settings-form button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <ul>
+      <li><a href="beranda.html">Beranda</a></li>
+      <li><a href="profil.html">Profil</a></li>
+      <li><a href="tugas.html">Tugas</a></li>
+      <li><a href="materi.html">Materi</a></li>
+      <li><a href="pengaturan.html">Pengaturan</a></li>
+    </ul>
+  </div>
+  
+  <div class="content">
+    <h2>Halaman Pengaturan</h2>
+    <form class="settings-form">
+      <label for="name">Nama Lengkap</label>
+      <input type="text" id="name" name="name" placeholder="Masukkan nama lengkap" required>
+      
+      <label for="email">Email</label>
+      <input type="text" id="email" name="email" placeholder="Masukkan alamat email" required>
+      
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="Masukkan password" required>
+      
+      <label for="role">Peran</label>
+      <select id="role" name="role">
+        <option value="siswa">Siswa</option>
+        <option value="guru">Guru</option>
+      </select>
+      
+      <button type="submit">Simpan</button>
+    </form>
+  </div>
+</body>
+</html>
